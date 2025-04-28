@@ -13,7 +13,7 @@ public class BrandDAO {
 
     public List<Brand> getAllBrands() throws SQLException {
         List<Brand> brands = new ArrayList<>();
-        String sql = "SELECT id, name FROM brands";
+        String sql = "SELECT id, name FROM brands ORDER BY id ASC;";
         try(Connection conn = DatabaseConnection.getConnection();
             PreparedStatement state = conn.prepareStatement(sql);
             ResultSet res = state.executeQuery()){
