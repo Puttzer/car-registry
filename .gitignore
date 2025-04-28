@@ -36,4 +36,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
-!/.idea/discord.xml
+/.idea/discord.xml
