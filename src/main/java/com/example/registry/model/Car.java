@@ -2,12 +2,12 @@ package com.example.registry.model;
 
 public class Car {
     private String registration;
-    private String brand_id;
+    private int brand_id;
 
     public Car() {
     }
 
-    public Car(String registration, String brand_id) {
+    public Car(String registration, int brand_id) {
         this.registration = registration;
         this.brand_id = brand_id;
     }
@@ -20,11 +20,11 @@ public class Car {
         this.registration = registration;
     }
 
-    public String getBrand_id() {
+    public int getBrand_id() {
         return brand_id;
     }
 
-    public void setBrand_id(String brand_id) {
+    public void setBrand_id(int brand_id) {
         this.brand_id = brand_id;
     }
 }
